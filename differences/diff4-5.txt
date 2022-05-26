@@ -1,0 +1,29 @@
+diff --git a/project1.sql b/project1.sql
+index 2324cf3..c129985 100644
+--- a/project1.sql
++++ b/project1.sql
+@@ -28,7 +28,8 @@ CREATE TABLE `SREPYMTS` (
+   `email` varchar(40) DEFAULT NULL,
+   `DOB` date DEFAULT NULL,
+   `age` int(100) DEFAULT NULL,
+-  `phn_num` int(11) DEFAULT NULL
++  `phn_num` int(11) DEFAULT NULL,
++  `address` varchar(150) DEFAULT NULL
+ ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+ /*!40101 SET character_set_client = @saved_cs_client */;
+ 
+@@ -38,7 +39,7 @@ CREATE TABLE `SREPYMTS` (
+ 
+ LOCK TABLES `SREPYMTS` WRITE;
+ /*!40000 ALTER TABLE `SREPYMTS` DISABLE KEYS */;
+-INSERT INTO `SREPYMTS` VALUES ('Manasa',12301,'manasahuydg@gmail.com','0000-09-25',NULL,NULL),('Pooja',12302,'pooja@gmail.com','2000-12-27',22,768436),('Deep',12303,'deep@gmail.com','1990-10-21',32,76843);
++INSERT INTO `SREPYMTS` VALUES ('Manasa',12301,'manasahuydg@gmail.com','0000-09-25',NULL,NULL,NULL),('Pooja',12302,'pooja@gmail.com','2000-12-27',22,768436,NULL),('Deep',12303,'deep@gmail.com','1990-10-21',32,76843,NULL);
+ /*!40000 ALTER TABLE `SREPYMTS` ENABLE KEYS */;
+ UNLOCK TABLES;
+ /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
+@@ -51,4 +52,4 @@ UNLOCK TABLES;
+ /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+ /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
+ 
+--- Dump completed on 2022-05-26 10:57:43
++-- Dump completed on 2022-05-26 13:43:53

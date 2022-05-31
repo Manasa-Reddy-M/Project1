@@ -1,107 +1,132 @@
 diff --git a/copies/schema6.sql b/copies/schema6.sql
-index 450284c..508cf78 100644
+index 508cf78..f72ae23 100644
 --- a/copies/schema6.sql
 +++ b/copies/schema6.sql
 @@ -41,4 +41,4 @@ CREATE TABLE `SREPYMTS` (
  /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
  /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
  
---- Dump completed on 2022-05-31 13:23:43
-+-- Dump completed on 2022-05-31 13:24:16
+--- Dump completed on 2022-05-31 13:24:16
++-- Dump completed on 2022-05-31 13:26:36
 diff --git a/differences/diff5-6.txt b/differences/diff5-6.txt
-index 0e72083..e69de29 100644
+index 55b5513..e69de29 100644
 --- a/differences/diff5-6.txt
 +++ b/differences/diff5-6.txt
-@@ -1,82 +0,0 @@
+@@ -1,107 +0,0 @@
 -diff --git a/copies/schema6.sql b/copies/schema6.sql
--index aedc9ce..450284c 100644
+-index 450284c..508cf78 100644
 ---- a/copies/schema6.sql
 -+++ b/copies/schema6.sql
 -@@ -41,4 +41,4 @@ CREATE TABLE `SREPYMTS` (
 - /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 - /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 - 
----- Dump completed on 2022-05-31 13:22:22
--+-- Dump completed on 2022-05-31 13:23:43
+---- Dump completed on 2022-05-31 13:23:43
+-+-- Dump completed on 2022-05-31 13:24:16
 -diff --git a/differences/diff5-6.txt b/differences/diff5-6.txt
--index 3dd089c..e69de29 100644
+-index 0e72083..e69de29 100644
 ---- a/differences/diff5-6.txt
 -+++ b/differences/diff5-6.txt
--@@ -1,57 +0,0 @@
+-@@ -1,82 +0,0 @@
 --diff --git a/copies/schema6.sql b/copies/schema6.sql
---index 0263c94..aedc9ce 100644
+--index aedc9ce..450284c 100644
 ----- a/copies/schema6.sql
 --+++ b/copies/schema6.sql
 --@@ -41,4 +41,4 @@ CREATE TABLE `SREPYMTS` (
 -- /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 -- /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 -- 
------ Dump completed on 2022-05-31 13:17:46
---+-- Dump completed on 2022-05-31 13:22:22
+----- Dump completed on 2022-05-31 13:22:22
+--+-- Dump completed on 2022-05-31 13:23:43
 --diff --git a/differences/diff5-6.txt b/differences/diff5-6.txt
---index 3d8ad21..e69de29 100644
+--index 3dd089c..e69de29 100644
 ----- a/differences/diff5-6.txt
 --+++ b/differences/diff5-6.txt
---@@ -1,32 +0,0 @@
----diff --git a/project1.sql b/project1.sql
----index fe90d23..0263c94 100644
------- a/project1.sql
----+++ b/project1.sql
----@@ -28,20 +28,9 @@ CREATE TABLE `SREPYMTS` (
----   `email` varchar(40) DEFAULT NULL,
----   `DOB` date DEFAULT NULL,
----   `age` int(100) DEFAULT NULL,
-----  `phn_num` int(11) DEFAULT NULL,
-----  `address` varchar(150) DEFAULT NULL
----+  `phn_num` int(11) DEFAULT NULL
---- ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
---- /*!40101 SET character_set_client = @saved_cs_client */;
-----
-------
------- Dumping data for table `SREPYMTS`
-------
-----
-----LOCK TABLES `SREPYMTS` WRITE;
-----/*!40000 ALTER TABLE `SREPYMTS` DISABLE KEYS */;
-----INSERT INTO `SREPYMTS` VALUES ('Manasa',12301,'manasahuydg@gmail.com','0000-09-25',NULL,NULL,NULL),('Pooja',12302,'pooja@gmail.com','2000-12-27',22,768436,NULL),('Deep',12303,'deep@gmail.com','1990-10-21',32,76843,NULL);
-----/*!40000 ALTER TABLE `SREPYMTS` ENABLE KEYS */;
-----UNLOCK TABLES;
---- /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
---- 
---- /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
----@@ -52,4 +41,4 @@ UNLOCK TABLES;
+--@@ -1,57 +0,0 @@
+---diff --git a/copies/schema6.sql b/copies/schema6.sql
+---index 0263c94..aedc9ce 100644
+------ a/copies/schema6.sql
+---+++ b/copies/schema6.sql
+---@@ -41,4 +41,4 @@ CREATE TABLE `SREPYMTS` (
 --- /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 --- /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 --- 
------- Dump completed on 2022-05-26 14:04:52
----+-- Dump completed on 2022-05-31 13:17:46
+------ Dump completed on 2022-05-31 13:17:46
+---+-- Dump completed on 2022-05-31 13:22:22
+---diff --git a/differences/diff5-6.txt b/differences/diff5-6.txt
+---index 3d8ad21..e69de29 100644
+------ a/differences/diff5-6.txt
+---+++ b/differences/diff5-6.txt
+---@@ -1,32 +0,0 @@
+----diff --git a/project1.sql b/project1.sql
+----index fe90d23..0263c94 100644
+------- a/project1.sql
+----+++ b/project1.sql
+----@@ -28,20 +28,9 @@ CREATE TABLE `SREPYMTS` (
+----   `email` varchar(40) DEFAULT NULL,
+----   `DOB` date DEFAULT NULL,
+----   `age` int(100) DEFAULT NULL,
+-----  `phn_num` int(11) DEFAULT NULL,
+-----  `address` varchar(150) DEFAULT NULL
+----+  `phn_num` int(11) DEFAULT NULL
+---- ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+---- /*!40101 SET character_set_client = @saved_cs_client */;
+-----
+-------
+------- Dumping data for table `SREPYMTS`
+-------
+-----
+-----LOCK TABLES `SREPYMTS` WRITE;
+-----/*!40000 ALTER TABLE `SREPYMTS` DISABLE KEYS */;
+-----INSERT INTO `SREPYMTS` VALUES ('Manasa',12301,'manasahuydg@gmail.com','0000-09-25',NULL,NULL,NULL),('Pooja',12302,'pooja@gmail.com','2000-12-27',22,768436,NULL),('Deep',12303,'deep@gmail.com','1990-10-21',32,76843,NULL);
+-----/*!40000 ALTER TABLE `SREPYMTS` ENABLE KEYS */;
+-----UNLOCK TABLES;
+---- /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
+---- 
+---- /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
+----@@ -52,4 +41,4 @@ UNLOCK TABLES;
+---- /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+---- /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
+---- 
+------- Dump completed on 2022-05-26 14:04:52
+----+-- Dump completed on 2022-05-31 13:17:46
+---diff --git a/project1.sql b/project1.sql
+---index 0263c94..aedc9ce 100644
+------ a/project1.sql
+---+++ b/project1.sql
+---@@ -41,4 +41,4 @@ CREATE TABLE `SREPYMTS` (
+--- /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+--- /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
+--- 
+------ Dump completed on 2022-05-31 13:17:46
+---+-- Dump completed on 2022-05-31 13:22:22
 --diff --git a/project1.sql b/project1.sql
---index 0263c94..aedc9ce 100644
+--index aedc9ce..450284c 100644
 ----- a/project1.sql
 --+++ b/project1.sql
 --@@ -41,4 +41,4 @@ CREATE TABLE `SREPYMTS` (
 -- /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 -- /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 -- 
------ Dump completed on 2022-05-31 13:17:46
---+-- Dump completed on 2022-05-31 13:22:22
+----- Dump completed on 2022-05-31 13:22:22
+--+-- Dump completed on 2022-05-31 13:23:43
 -diff --git a/project1.sql b/project1.sql
--index aedc9ce..450284c 100644
+-index 450284c..508cf78 100644
 ---- a/project1.sql
 -+++ b/project1.sql
 -@@ -41,4 +41,4 @@ CREATE TABLE `SREPYMTS` (
 - /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 - /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 - 
----- Dump completed on 2022-05-31 13:22:22
--+-- Dump completed on 2022-05-31 13:23:43
+---- Dump completed on 2022-05-31 13:23:43
+-+-- Dump completed on 2022-05-31 13:24:16
 diff --git a/project1.sql b/project1.sql
-index 450284c..508cf78 100644
+index 508cf78..f72ae23 100644
 --- a/project1.sql
 +++ b/project1.sql
 @@ -41,4 +41,4 @@ CREATE TABLE `SREPYMTS` (
  /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
  /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
  
---- Dump completed on 2022-05-31 13:23:43
-+-- Dump completed on 2022-05-31 13:24:16
+--- Dump completed on 2022-05-31 13:24:16
++-- Dump completed on 2022-05-31 13:26:36
